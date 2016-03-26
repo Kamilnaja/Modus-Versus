@@ -10,19 +10,35 @@
 </head>
 <body>
 	<a href="#" class="toggle-nav">&#9776;</a>
-	<nav>
+	<nav class="first-menu">
 		<h1>Modus</h1>
-	<ul class="active">
-		<li><a href="#">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">services</a></li>
-		<li><a href="#">portfolio</a></li>
-		<li><a href="#">blog</a></li>
-		<li><a href="#">features</a></li>
-		<li><a href="#">Contacts</a></li>
-		<li><a href="#"><img src="img/search.png"></a></li>
-	</ul>
+		<ul class="active">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">services</a></li>
+			<li><a href="#">portfolio</a></li>
+			<li><a href="#">blog</a></li>
+			<li><a href="#">features</a></li>
+			<li><a href="#">Contacts</a></li>
+			<li><a href="#"><img src="img/search.png" alt="logo"></a></li>
+		</ul>
 	</nav>
+	<nav class="second-menu">
+		<div class="second-menu-wrap">
+		<ul>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Second </a></li>
+		</ul>
+		</div>
+	</nav>
+
+	<article class="intro">
+		<div class="intro-wrapper">
+	<h2>Donec faucibus ultricies congue</h2>
+	<p>Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		
+	</div>
+	</article>
 	<script>
 	jQuery(document).ready(function() {
     jQuery('.toggle-nav').click(function(e) {
