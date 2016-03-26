@@ -72,40 +72,31 @@ html {
   font-size: 62.5%;
 }
 
-/* line 17, ../sass/screen.scss */
-.first-menu-wrapper {
-  width: 80%;
-}
-
-/* line 22, ../sass/screen.scss */
-nav {
+/* line 18, ../sass/screen.scss */
+.first-menu {
   height: 80px;
   background-color: #76C7C0;
   line-height: 80px;
-  padding-right: 30px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
 }
-/* line 32, ../sass/screen.scss */
-nav h1 {
+/* line 22, ../sass/screen.scss */
+.first-menu h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 3.0rem;
   color: white;
   font-weight: 700;
+  float: left;
 }
-/* line 38, ../sass/screen.scss */
-nav ul {
+/* line 29, ../sass/screen.scss */
+.first-menu ul {
   display: inline;
+  float: right;
 }
-/* line 40, ../sass/screen.scss */
-nav ul li {
+/* line 32, ../sass/screen.scss */
+.first-menu ul li {
   display: inline-block;
 }
-/* line 42, ../sass/screen.scss */
-nav ul li a {
+/* line 34, ../sass/screen.scss */
+.first-menu ul li a {
   text-decoration: none;
   color: white;
   margin-right: 30px;
@@ -114,21 +105,21 @@ nav ul li a {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 .toggle-nav {
   display: none;
 }
 
 @media screen and (max-width: 860px) {
-  /* line 59, ../sass/screen.scss */
-  nav {
+  /* line 51, ../sass/screen.scss */
+  .first-menu {
     width: 100%;
     padding: 10px 18px;
     position: relative;
     display: inline-block;
   }
-  /* line 66, ../sass/screen.scss */
-  nav ul {
+  /* line 58, ../sass/screen.scss */
+  .first-menu ul {
     display: inline-block;
     width: 100%;
     background-color: #76C7C0;
@@ -140,44 +131,43 @@ nav ul li a {
     margin-right: auto;
     line-height: 1.3rem;
   }
-  /* line 78, ../sass/screen.scss */
-  nav ul li {
+  /* line 70, ../sass/screen.scss */
+  .first-menu ul li {
     float: none;
     display: block;
     border-bottom: solid 1px #3e9991;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  /* line 85, ../sass/screen.scss */
-  nav ul li a {
+  /* line 77, ../sass/screen.scss */
+  .first-menu ul li a {
     font-size: 1.3rem;
     margin-right: 0px;
   }
-  /* line 91, ../sass/screen.scss */
-  nav ul.active {
+  /* line 83, ../sass/screen.scss */
+  .first-menu ul.active {
     display: none;
   }
 
-  /* line 97, ../sass/screen.scss */
+  /* line 89, ../sass/screen.scss */
   .toggle-nav {
-    margin-top: -29px;
     margin-right: 40px;
     display: inline-block;
     float: right;
     position: relative;
     z-index: 100;
-    top: 65px;
     color: white;
-    font-size: 3.0rem;
+    font-size: 2.0rem;
+    text-decoration: none;
   }
 
-  /* line 110, ../sass/screen.scss */
+  /* line 103, ../sass/screen.scss */
   .second-menu {
     display: none;
   }
 }
 /* koniec media queries */
-/* line 115, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .second-menu {
   width: 100%;
   height: 80px;
@@ -185,8 +175,8 @@ nav ul li a {
   margin-right: auto;
   background-color: #ECECEC;
 }
-/* line 121, ../sass/screen.scss */
-.second-menu .second-menu-wrap {
+/* line 115, ../sass/screen.scss */
+.second-menu .page-wrap {
   width: 80%;
   max-width: 1000px;
   background-color: #ECECEC;
@@ -194,36 +184,42 @@ nav ul li a {
   display: inline-block;
   font-size: 2.0rem;
   font-family: "Open Sans", sans-serif;
-  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  line-height: 80px;
 }
-/* line 130, ../sass/screen.scss */
-.second-menu .second-menu-wrap a {
+/* line 129, ../sass/screen.scss */
+.second-menu .page-wrap ul li {
+  display: inline;
+}
+/* line 132, ../sass/screen.scss */
+.second-menu .page-wrap ul li a {
+  text-decoration: none;
   color: #98A2A2;
+  font: "Open Sans", sans-serif;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .intro {
   background-color: white;
 }
-/* line 137, ../sass/screen.scss */
-.intro .intro-wrapper {
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: white;
-}
 /* line 142, ../sass/screen.scss */
-.intro .intro-wrapper:after {
-  background-color: white;
-}
-/* line 145, ../sass/screen.scss */
-.intro .intro-wrapper h2 {
+.intro h2 {
   font: 3rem "Open Sans", sans-serif;
   color: #E1524B;
   margin-top: 62px;
 }
-/* line 150, ../sass/screen.scss */
-.intro .intro-wrapper p {
+/* line 147, ../sass/screen.scss */
+.intro p {
   font: 1.4rem "Open Sans", sans-serif;
   color: #98A2A2;
+  margin-top: 3.1rem;
+  line-height: 2.0rem;
+}
+
+/* line 155, ../sass/screen.scss */
+.page-wrap {
+  width: 80%;
+  margin: 0 auto;
 }

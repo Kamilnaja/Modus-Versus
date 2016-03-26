@@ -14,29 +14,21 @@ $red: #E1524B;
 
 
 html { font-size: 62.5%; } 
-.first-menu-wrapper {
-	width: 80%;
 
-
-}
-nav {
+.first-menu {
 	height: 80px;
 	background-color: $lightblue;
 	line-height: 80px; //wyśrodkowuje elementy
-	padding-right: 30px;
-	padding-left: 30px;
-	display: flex;
-	justify-content: space-around;
-	margin-left: auto;
-	margin-right: auto;
 	h1 {
 		font-family: $open;
 		font-size: 3.0rem;
 		color: white;
 		font-weight: 700;
+		float: left;
 	}
 	ul {
 		display: inline;
+		float: right;
 	li {
 		display: inline-block; 
 				a {
@@ -56,7 +48,7 @@ nav {
 display: none;
 }
 @media screen and (max-width: 860px){
-	nav {
+.first-menu {
 		width: 100%;
 		padding: 10px 18px;
 		position: relative;
@@ -95,16 +87,17 @@ display: none;
 	
 	}
 	.toggle-nav {
-		margin-top: -29px;
+		//margin-top: -29px;
 		margin-right: 40px;
 		//padding: 40px;//daje ten biały pasek
 		display: inline-block;
 		float: right;
 		position: relative;
 		z-index: 100;
-		top: 65px;
+		//top: 65px;
 		color: white;
-		font-size: 3.0rem;
+		font-size: 2.0rem;
+		text-decoration: none;
 
 	}
 	.second-menu {
@@ -118,7 +111,8 @@ display: none;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: $lightgrey;
-	.second-menu-wrap {
+
+	.page-wrap {
 		width: 80%;
 		max-width: 1000px;
 		background-color: $lightgrey;
@@ -126,22 +120,25 @@ display: none;
 		display: inline-block;
 		font-size :2.0rem;
 		font-family: $open;
-		display: flex;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		line-height: 80px;
+		ul {
+
+		li {
+			display: inline;
+
 			a {
+				text-decoration: none;
 				color: $darkgrey;
-			}
-	}
+				font: $open;
+		}	}
+	}}
 }
 .intro {
 	background-color: white;
-	.intro-wrapper {
-		width: 80%;
-		margin-right: auto;
-		margin-left: auto;
-		background-color: $white;
-		&:after{
-			background-color: $white;
-		}
+
 	h2 {
 		font: 3.0rem $open;
 		color: $red;
@@ -150,6 +147,13 @@ display: none;
 	p {
 		font: 1.4rem $open;
 		color: $darkgrey;
+		margin-top: 3.1rem;
+		line-height: 2.0rem;
 	}
 }
+
+.page-wrap //wrapuje wszystkie elementy strony 
+{
+	width: 80%;
+	margin: 0 auto;
 }
