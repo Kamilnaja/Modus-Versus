@@ -43,10 +43,70 @@ html { font-size: 62.5%; }
 	}
 
 }
+.benefits {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	padding-top: 40px;
+		h2 {
+			font: bold 1.6rem $open;
+			color: darken($darkgrey, 10);
+			margin-top: 10px;
+			margin-bottom: 10px;
+
+			}
+		p {
+			margin-top: 20px;
+			font: 1.3rem $open;
+			color: $darkgrey;
+				margin-bottom: 20px;
+		}
+
+	.why-choose-us {
+		flex: 1;
+	
+		ul li {
+			font: 1.3rem $open;
+			color: $darkgrey;
+			list-style-image: url("../img/list.jpg");
+
+		}
+		}
+	.testimonials {
+		flex: 1;
+	}
+	.our-benefits {
+		flex: 2;
+	
+	}
+	
+}
+
+.our-team {
+	background-color: salmon;
+	h2 {
+		text-align: center;
+	}
+	.page-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	.img {
+		width: 270px;
+		height: 310px;
+		background-color: white;
+		margin: 20px 20px 20px 20px;
+
+
+	}}
+}
+
 
 .toggle-nav {
 display: none;
 }
+//początek media queries -----------------------------
 @media screen and (max-width: 860px){
 .first-menu {
 		width: 100%;
@@ -61,7 +121,7 @@ display: none;
 		background-color: $lightblue;
 		text-align: center;
 		position: absolute;
-		margin-top: 12px;//reguluje odleglośc między menu a stroną 
+		margin-top: 93px;//reguluje odleglośc między menu a stroną 
 		left: 0px;
 		//padding: 0px 18px; 
 		margin-left: auto;
@@ -103,8 +163,13 @@ display: none;
 	.second-menu {
 		display: none;
 	}
-} /* koniec media queries */
+	.benefits {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap; }
+} 
 
+/* koniec media queries --------------------------------*/
 .second-menu {
 	width: 100%;
 	height: 80px;
