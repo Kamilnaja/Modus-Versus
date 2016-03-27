@@ -48,6 +48,7 @@ html { font-size: 62.5%; }
 	flex-wrap: nowrap;
 	flex-direction: row;
 	padding-top: 40px;
+	padding-bottom: 40px;
 		h2 {
 			font: bold 1.6rem $open;
 			color: darken($darkgrey, 10);
@@ -81,25 +82,55 @@ html { font-size: 62.5%; }
 	}
 	
 }
+.back {//definiuje drugą stronę karty w ourteam
+			background-color: $lightblue !important;
+			color: white;
+			background-image: none !important;
 
+		}
 .our-team {
-	background-color: salmon;
+	background-color: $lightgrey;
+	padding-top: 70px;
 	h2 {
 		text-align: center;
+		font: 4.0rem $open;
+		font-weight: 700;
+		color: $darkgrey;
+		text-transform: uppercase;
+		margin-bottom: 80px;
+		line-height: 48px;
+		box-sizing: border-box;
 	}
 	.page-wrap {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
 
 	.img {
 		width: 270px;
 		height: 310px;
 		background-color: white;
-		margin: 20px 20px 20px 20px;
+		background-image: url("../img/fota.jpg");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		//margin-right: 10px;
+		//margin-left: 10px;
+		margin-left: 14px;
+		margin-top: 20px;
+		border-radius: 20px;
+		box-sizing: border-box;
+		padding: 20px;
+
+			p{
+				font: 1.3rem $open;
+				
+			}
 
 
-	}}
+	}
+} 
 }
 
 

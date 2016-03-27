@@ -111,76 +111,104 @@ html {
   flex-wrap: nowrap;
   flex-direction: row;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
-/* line 51, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .benefits h2 {
   font: bold 1.6rem "Open Sans", sans-serif;
   color: #7d8a8a;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 58, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .benefits p {
   margin-top: 20px;
   font: 1.3rem "Open Sans", sans-serif;
   color: #98A2A2;
   margin-bottom: 20px;
 }
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .benefits .why-choose-us {
   flex: 1;
 }
-/* line 68, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .benefits .why-choose-us ul li {
   font: 1.3rem "Open Sans", sans-serif;
   color: #98A2A2;
   list-style-image: url("../img/list.jpg");
 }
-/* line 75, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .benefits .testimonials {
   flex: 1;
 }
-/* line 78, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .benefits .our-benefits {
   flex: 2;
 }
 
 /* line 85, ../sass/screen.scss */
-.our-team {
-  background-color: salmon;
+.back {
+  background-color: #76C7C0 !important;
+  color: white;
+  background-image: none !important;
 }
-/* line 87, ../sass/screen.scss */
+
+/* line 91, ../sass/screen.scss */
+.our-team {
+  background-color: #ECECEC;
+  padding-top: 70px;
+}
+/* line 94, ../sass/screen.scss */
 .our-team h2 {
   text-align: center;
+  font: 4rem "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #98A2A2;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  line-height: 48px;
+  box-sizing: border-box;
 }
-/* line 90, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .our-team .page-wrap {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
-/* line 95, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .our-team .page-wrap .img {
   width: 270px;
   height: 310px;
   background-color: white;
-  margin: 20px 20px 20px 20px;
+  background-image: url("../img/fota.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-left: 14px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+/* line 126, ../sass/screen.scss */
+.our-team .page-wrap .img p {
+  font: 1.3rem "Open Sans", sans-serif;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .toggle-nav {
   display: none;
 }
 
 @media screen and (max-width: 860px) {
-  /* line 111, ../sass/screen.scss */
+  /* line 142, ../sass/screen.scss */
   .first-menu {
     width: 100%;
     padding: 10px 18px;
     position: relative;
     display: inline-block;
   }
-  /* line 118, ../sass/screen.scss */
+  /* line 149, ../sass/screen.scss */
   .first-menu ul {
     display: inline-block;
     width: 100%;
@@ -193,7 +221,7 @@ html {
     margin-right: auto;
     line-height: 1.3rem;
   }
-  /* line 130, ../sass/screen.scss */
+  /* line 161, ../sass/screen.scss */
   .first-menu ul li {
     float: none;
     display: block;
@@ -201,17 +229,17 @@ html {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  /* line 137, ../sass/screen.scss */
+  /* line 168, ../sass/screen.scss */
   .first-menu ul li a {
     font-size: 1.3rem;
     margin-right: 0px;
   }
-  /* line 143, ../sass/screen.scss */
+  /* line 174, ../sass/screen.scss */
   .first-menu ul.active {
     display: none;
   }
 
-  /* line 149, ../sass/screen.scss */
+  /* line 180, ../sass/screen.scss */
   .toggle-nav {
     margin-right: 40px;
     display: inline-block;
@@ -223,12 +251,12 @@ html {
     text-decoration: none;
   }
 
-  /* line 163, ../sass/screen.scss */
+  /* line 194, ../sass/screen.scss */
   .second-menu {
     display: none;
   }
 
-  /* line 166, ../sass/screen.scss */
+  /* line 197, ../sass/screen.scss */
   .benefits {
     display: flex;
     flex-direction: column;
@@ -236,7 +264,7 @@ html {
   }
 }
 /* koniec media queries --------------------------------*/
-/* line 173, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .second-menu {
   width: 100%;
   height: 80px;
@@ -244,7 +272,7 @@ html {
   margin-right: auto;
   background-color: #ECECEC;
 }
-/* line 180, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .second-menu .page-wrap {
   width: 80%;
   max-width: 1000px;
@@ -258,28 +286,28 @@ html {
   display: block;
   line-height: 80px;
 }
-/* line 194, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .second-menu .page-wrap ul li {
   display: inline;
 }
-/* line 197, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .second-menu .page-wrap ul li a {
   text-decoration: none;
   color: #98A2A2;
   font: "Open Sans", sans-serif;
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .intro {
   background-color: white;
 }
-/* line 207, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .intro h2 {
   font: 3rem "Open Sans", sans-serif;
   color: #E1524B;
   margin-top: 62px;
 }
-/* line 212, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .intro p {
   font: 1.4rem "Open Sans", sans-serif;
   color: #98A2A2;
@@ -287,7 +315,7 @@ html {
   line-height: 2.0rem;
 }
 
-/* line 220, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .page-wrap {
   width: 80%;
   margin: 0 auto;
