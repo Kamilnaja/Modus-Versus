@@ -82,7 +82,7 @@ html { font-size: 62.5%; }
 	}
 	
 }
-.back {//definiuje drugą stronę karty w ourteam
+.back { //definiuje drugą stronę karty w ourteam
 			background-color: $lightblue !important;
 			color: white;
 			background-image: none !important;
@@ -106,7 +106,27 @@ html { font-size: 62.5%; }
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	width: 90%;
+	.img-write {
+		width: 200px;
+		height: 55px;
 
+		background-color: $darkgrey;
+		border-radius: 10px;
+		position: relative;
+		top: 253px;
+		margin-right: auto;
+		margin-left: auto;
+		color: white;
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(161,161,161,1);
+		-moz-box-shadow: 0px 5px 5px 0px rgba(161,161,161,1);
+		box-shadow: 0px 5px 5px 0px rgba(161,161,161,1);
+		p {
+			text-align: center;
+			
+
+		}
+	}
 
 	.img {
 		width: 270px;
@@ -118,10 +138,15 @@ html { font-size: 62.5%; }
 		//margin-right: 10px;
 		//margin-left: 10px;
 		margin-left: 14px;
-		margin-top: 20px;
+		margin-bottom: 20px;
 		border-radius: 20px;
 		box-sizing: border-box;
 		padding: 20px;
+		
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(161,161,161,1);
+		-moz-box-shadow: 0px 5px 5px 0px rgba(161,161,161,1);
+		box-shadow: 0px 5px 5px 0px rgba(161,161,161,1);
+
 
 			p{
 				font: 1.3rem $open;
@@ -137,7 +162,60 @@ html { font-size: 62.5%; }
 .toggle-nav {
 display: none;
 }
-//początek media queries -----------------------------
+.second-menu {
+	width: 100%;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: $lightgrey;
+
+	.page-wrap {
+		width: 80%;
+		max-width: 1000px;
+		background-color: $lightgrey;
+		color: $darkgrey;
+		display: inline-block;
+		font-size :2.0rem;
+		font-family: $open;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		line-height: 80px;
+		ul {
+
+		li {
+			display: inline;
+
+			a {
+				text-decoration: none;
+				color: $darkgrey;
+				font: $open;
+		}	}
+	}}
+}
+.intro {
+	background-color: white;
+
+	h2 {
+		font: 3.0rem $open;
+		color: $red;
+		margin-top: 62px;
+	}
+	p {
+		font: 1.4rem $open;
+		color: $darkgrey;
+		margin-top: 3.1rem;
+		line-height: 2.0rem;
+	}
+}
+
+.page-wrap //wrapuje wszystkie elementy strony 
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+//początek media queries ######################################
 @media screen and (max-width: 860px){
 .first-menu {
 		width: 100%;
@@ -197,59 +275,12 @@ display: none;
 	.benefits {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap; }
+	flex-wrap: wrap; 
+	h2 {
+		text-align: center;
+	}
+
+}
 } 
 
 /* koniec media queries --------------------------------*/
-.second-menu {
-	width: 100%;
-	height: 80px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: $lightgrey;
-
-	.page-wrap {
-		width: 80%;
-		max-width: 1000px;
-		background-color: $lightgrey;
-		color: $darkgrey;
-		display: inline-block;
-		font-size :2.0rem;
-		font-family: $open;
-		margin-right: auto;
-		margin-left: auto;
-		display: block;
-		line-height: 80px;
-		ul {
-
-		li {
-			display: inline;
-
-			a {
-				text-decoration: none;
-				color: $darkgrey;
-				font: $open;
-		}	}
-	}}
-}
-.intro {
-	background-color: white;
-
-	h2 {
-		font: 3.0rem $open;
-		color: $red;
-		margin-top: 62px;
-	}
-	p {
-		font: 1.4rem $open;
-		color: $darkgrey;
-		margin-top: 3.1rem;
-		line-height: 2.0rem;
-	}
-}
-
-.page-wrap //wrapuje wszystkie elementy strony 
-{
-	width: 80%;
-	margin: 0 auto;
-}
