@@ -14,8 +14,7 @@ $red: #E1524B;
 
 
 html { font-size: 62.5%; } 
-
-.first-menu {
+nav {
 	height: 80px;
 	background-color: $lightblue;
 	line-height: 80px; //wyśrodkowuje elementy
@@ -47,12 +46,20 @@ html { font-size: 62.5%; }
 	}
 
 }
+.intro {
+	padding-right: 8%;
+	padding-left: 8%;
+	padding-top: 30px;
+}
 .benefits {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	flex-direction: row;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	padding-left: 8%;
+	padding-right: 8%;
+	
 		h2 {
 			font: bold 1.6rem $open;
 			color: darken($darkgrey, 10);
@@ -64,11 +71,11 @@ html { font-size: 62.5%; }
 			margin-top: 20px;
 			font: 1.3rem $open;
 			color: $darkgrey;
-				margin-bottom: 20px;
 		}
 
 	.why-choose-us {
-		flex: 1;
+		flex: 10;
+
 	
 		ul li {
 			font: 1.3rem $open;
@@ -79,11 +86,21 @@ html { font-size: 62.5%; }
 		}
 		}
 	.testimonials {
-		flex: 1;
+		flex: 10;
 	}
 	.our-benefits {
-		flex: 2;
-	
+		flex: 10;
+		.img-wrapper {
+		//	background-color: red;
+
+		}
+		img {
+				float: left;
+		}
+		p {
+		
+		}
+
 	}
 	
 }
@@ -148,7 +165,6 @@ html { font-size: 62.5%; }
 		p {
 			text-align: center;
 			font: 1.4rem $open;
-			
 
 		}
 	}
@@ -165,19 +181,13 @@ display: none;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: $lightgrey;
-	.page-wrap {
+	color: $darkgrey;
+	font-size :2.0rem;
+	padding-left: 10%;
 	
-	
-		background-color: $lightgrey;
-		color: $darkgrey;
-		display: inline-block;
-		font-size :2.0rem;
-		font-family: $open;
-		margin-right: auto;
-		margin-left: auto;
-		display: block;
 		line-height: 80px;
 		ul {
+		float: left;
 
 		li {
 			display: inline;
@@ -185,8 +195,8 @@ display: none;
 			a {
 				text-decoration: none;
 				color: $darkgrey;
-				font: $open;
-				}
+				font-family: $open;
+				
 			}
 		}
 	}
@@ -216,21 +226,22 @@ display: none;
 	background-color: $lightgrey;
 
 
- h2 {
-	font: 4.0rem $open;
-	color: $red;
-	text-align: center;
-//	margin-top: 130px;
-	padding-top: 100px;
- }
- p {
-		font: 1.4rem $open;
-		color: $darkgrey;
-		margin-top: 30px;
+
+ 	h2 {
+		font: 4.0rem $open;
+		color: $red;
 		text-align: center;
-		margin-right: 10%;
-		margin-left: 10%;
+		padding-top: 100px;
+		width: 90%;
  }
+	 p {
+			font: 1.4rem $open;
+			color: $darkgrey;
+			margin-top: 30px;
+			text-align: center;
+			margin-right: 10%;
+			margin-left: 10%;
+	 }
 }
 .slider {
 	background-color: $lightgrey;
@@ -253,8 +264,6 @@ display: none;
 				background-color: $darkgrey;
 			}
 	}
-
-		
 
 	p {
 		font: bold 1.5rem $open;
@@ -335,9 +344,13 @@ footer {
 }
 //początek media queries ######################################
 @media screen and (max-width: 860px){
+.slogan h2 {
+	padding-top: 20px;
+	width: 100%;
+}
 .first-menu {
 		width: 100%;
-		padding: 10px 18px;
+		padding: 10px 0px;
 		position: relative;
 		display: inline-block;
 	ul {
@@ -358,7 +371,6 @@ footer {
 			border-bottom: solid 1px darken($lightblue, 20);
 			padding-top: 20px;
 			padding-bottom: 20px;
-		
 			a {
 		font-size: 1.3rem;
 		margin-right: 0px;
@@ -372,18 +384,15 @@ footer {
 	
 	}
 	.toggle-nav {
-		//margin-top: -29px;
-		margin-right: 40px;
-		//padding: 40px;//daje ten biały pasek
 		display: inline-block;
 		float: right;
 		position: relative;
 		z-index: 100;
-		//top: 65px;
 		color: white;
 		font-size: 2.0rem;
 		text-decoration: none;
-
+		font-size: 30px;
+		
 	}
 	.second-menu {
 		display: none;
@@ -394,9 +403,41 @@ footer {
 	flex-wrap: wrap; 
 	h2 {
 		text-align: center;
+				margin-top: 40px;
+
+	}
+	p {
+
 	}
 
 }
 } 
+.intro  {
+	h2 {margin-top: 20px;}
+	p { margin-top: 2.5rem;}
+}
+.benefits {
+	h2 { margin-top: 20px;}
+	p { margin-bottom: 20px;	}
+}
+.slider {
+	width: 100%;
+	p {
+		margin-right: 0px;
+		margin-left: 0px;
+		padding-top: 20px;
+		text-align: center;
+		margin-bottom: 30px;
+
+	}
+}
+.our-team {
+	padding-top: 10px;
+	h2 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+}
 
 /* koniec media queries --------------------------------*/
