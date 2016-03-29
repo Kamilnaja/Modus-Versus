@@ -96,6 +96,10 @@ html {
   display: inline-block;
 }
 /* line 34, ../sass/screen.scss */
+.first-menu ul li a:hover {
+  color: #E1524B;
+}
+/* line 37, ../sass/screen.scss */
 .first-menu ul li a {
   text-decoration: none;
   color: white;
@@ -105,7 +109,7 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .benefits {
   display: flex;
   flex-wrap: nowrap;
@@ -113,52 +117,70 @@ html {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* line 52, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .benefits h2 {
   font: bold 1.6rem "Open Sans", sans-serif;
   color: #7d8a8a;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 59, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .benefits p {
   margin-top: 20px;
   font: 1.3rem "Open Sans", sans-serif;
   color: #98A2A2;
   margin-bottom: 20px;
 }
-/* line 66, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .benefits .why-choose-us {
   flex: 1;
 }
-/* line 69, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .benefits .why-choose-us ul li {
   font: 1.3rem "Open Sans", sans-serif;
   color: #98A2A2;
   list-style-image: url("../img/list.jpg");
+  list-style-position: inside;
 }
-/* line 76, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .benefits .testimonials {
   flex: 1;
 }
-/* line 79, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .benefits .our-benefits {
   flex: 2;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .back {
   background-color: #76C7C0 !important;
   color: white;
   background-image: none !important;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .our-team {
   background-color: #ECECEC;
   padding-top: 70px;
 }
-/* line 94, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
+.our-team figure {
+  width: 270px;
+  height: 310px;
+  background-color: white;
+  background-image: url("../img/fota.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-left: 14px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  -webkit-box-shadow: 0px 5px 5px 0px #a1a1a1;
+  -moz-box-shadow: 0px 5px 5px 0px #a1a1a1;
+  box-shadow: 0px 5px 5px 0px #a1a1a1;
+}
+/* line 116, ../sass/screen.scss */
 .our-team h2 {
   text-align: center;
   font: 4rem "Open Sans", sans-serif;
@@ -169,61 +191,43 @@ html {
   line-height: 48px;
   box-sizing: border-box;
 }
-/* line 104, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .our-team .page-wrap {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   width: 90%;
 }
-/* line 110, ../sass/screen.scss */
-.our-team .page-wrap .img-write {
+/* line 133, ../sass/screen.scss */
+.our-team .page-wrap figcaption {
   width: 200px;
   height: 55px;
+  box-sizing: border-box;
   background-color: #98A2A2;
   border-radius: 10px;
   position: relative;
-  top: 253px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 250px;
+  padding: 20px;
   color: white;
   -webkit-box-shadow: 0px 5px 5px 0px #a1a1a1;
   -moz-box-shadow: 0px 5px 5px 0px #a1a1a1;
   box-shadow: 0px 5px 5px 0px #a1a1a1;
 }
-/* line 124, ../sass/screen.scss */
-.our-team .page-wrap .img-write p {
+/* line 148, ../sass/screen.scss */
+.our-team .page-wrap figcaption p {
   text-align: center;
-}
-/* line 131, ../sass/screen.scss */
-.our-team .page-wrap .img {
-  width: 270px;
-  height: 310px;
-  background-color: white;
-  background-image: url("../img/fota.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  margin-left: 14px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  box-sizing: border-box;
-  padding: 20px;
-  -webkit-box-shadow: 0px 5px 5px 0px #a1a1a1;
-  -moz-box-shadow: 0px 5px 5px 0px #a1a1a1;
-  box-shadow: 0px 5px 5px 0px #a1a1a1;
-}
-/* line 151, ../sass/screen.scss */
-.our-team .page-wrap .img p {
-  font: 1.3rem "Open Sans", sans-serif;
+  font: 1.4rem "Open Sans", sans-serif;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .toggle-nav {
   display: none;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .second-menu {
   width: 100%;
   height: 80px;
@@ -231,10 +235,8 @@ html {
   margin-right: auto;
   background-color: #ECECEC;
 }
-/* line 172, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .second-menu .page-wrap {
-  width: 80%;
-  max-width: 1000px;
   background-color: #ECECEC;
   color: #98A2A2;
   display: inline-block;
@@ -245,28 +247,28 @@ html {
   display: block;
   line-height: 80px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .second-menu .page-wrap ul li {
   display: inline;
 }
-/* line 189, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .second-menu .page-wrap ul li a {
   text-decoration: none;
   color: #98A2A2;
   font: "Open Sans", sans-serif;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .intro {
   background-color: white;
 }
-/* line 199, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .intro h2 {
   font: 3rem "Open Sans", sans-serif;
   color: #E1524B;
   margin-top: 62px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .intro p {
   font: 1.4rem "Open Sans", sans-serif;
   color: #98A2A2;
@@ -274,21 +276,152 @@ html {
   line-height: 2.0rem;
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .page-wrap {
   width: 80%;
   margin: 0 auto;
 }
 
+/* line 215, ../sass/screen.scss */
+.slogan {
+  background-color: #ECECEC;
+}
+/* line 219, ../sass/screen.scss */
+.slogan h2 {
+  font: 4rem "Open Sans", sans-serif;
+  color: #E1524B;
+  text-align: center;
+  padding-top: 100px;
+}
+/* line 226, ../sass/screen.scss */
+.slogan p {
+  font: 1.4rem "Open Sans", sans-serif;
+  color: #98A2A2;
+  margin-top: 30px;
+  text-align: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+/* line 235, ../sass/screen.scss */
+.slider {
+  background-color: #ECECEC;
+}
+/* line 237, ../sass/screen.scss */
+.slider .but-wrapper {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+/* line 241, ../sass/screen.scss */
+.slider .but-wrapper button {
+  border-radius: 15%;
+  width: 40px;
+  height: 40px;
+  background-color: #E1524B;
+  float: right;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: -30px;
+}
+/* line 252, ../sass/screen.scss */
+.slider .but-wrapper .active {
+  background-color: #98A2A2;
+}
+/* line 259, ../sass/screen.scss */
+.slider p {
+  font: bold 1.5rem "Open Sans", sans-serif;
+  color: #98A2A2;
+  margin-left: 140px;
+  padding-top: 70px;
+}
+/* line 266, ../sass/screen.scss */
+.slider .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+/* line 274, ../sass/screen.scss */
+.slider figure {
+  width: 170px;
+  height: 90px;
+  background-color: white;
+  background-image: url("../img/jquery.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+/* line 287, ../sass/screen.scss */
+footer {
+  background-color: #76C7C0;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 50px;
+  flex-direction: row;
+  padding-right: 7%;
+  padding-left: 7%;
+  line-height: 23px;
+}
+/* line 298, ../sass/screen.scss */
+footer article {
+  padding: 20px;
+}
+/* line 301, ../sass/screen.scss */
+footer h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+/* line 306, ../sass/screen.scss */
+footer p {
+  font-size: 1.5rem;
+}
+/* line 309, ../sass/screen.scss */
+footer a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+/* line 314, ../sass/screen.scss */
+footer li {
+  list-style-image: url("../img/chevron.png");
+  list-style-position: inside;
+}
+/* line 319, ../sass/screen.scss */
+footer .modus {
+  flex: 1;
+}
+/* line 323, ../sass/screen.scss */
+footer .company {
+  flex: 1;
+}
+/* line 327, ../sass/screen.scss */
+footer .community {
+  flex: 1;
+}
+/* line 331, ../sass/screen.scss */
+footer .from-the-blog {
+  flex: 1;
+}
+
 @media screen and (max-width: 860px) {
-  /* line 220, ../sass/screen.scss */
+  /* line 338, ../sass/screen.scss */
   .first-menu {
     width: 100%;
     padding: 10px 18px;
     position: relative;
     display: inline-block;
   }
-  /* line 227, ../sass/screen.scss */
+  /* line 343, ../sass/screen.scss */
   .first-menu ul {
     display: inline-block;
     width: 100%;
@@ -301,7 +434,7 @@ html {
     margin-right: auto;
     line-height: 1.3rem;
   }
-  /* line 239, ../sass/screen.scss */
+  /* line 355, ../sass/screen.scss */
   .first-menu ul li {
     float: none;
     display: block;
@@ -309,17 +442,17 @@ html {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  /* line 246, ../sass/screen.scss */
+  /* line 362, ../sass/screen.scss */
   .first-menu ul li a {
     font-size: 1.3rem;
     margin-right: 0px;
   }
-  /* line 252, ../sass/screen.scss */
+  /* line 368, ../sass/screen.scss */
   .first-menu ul.active {
     display: none;
   }
 
-  /* line 258, ../sass/screen.scss */
+  /* line 374, ../sass/screen.scss */
   .toggle-nav {
     margin-right: 40px;
     display: inline-block;
@@ -331,18 +464,18 @@ html {
     text-decoration: none;
   }
 
-  /* line 272, ../sass/screen.scss */
+  /* line 388, ../sass/screen.scss */
   .second-menu {
     display: none;
   }
 
-  /* line 275, ../sass/screen.scss */
+  /* line 391, ../sass/screen.scss */
   .benefits {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  /* line 279, ../sass/screen.scss */
+  /* line 395, ../sass/screen.scss */
   .benefits h2 {
     text-align: center;
   }
