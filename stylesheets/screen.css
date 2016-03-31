@@ -467,8 +467,8 @@ footer .from-the-blog {
     float: none;
     display: block;
     border-bottom: solid 1px #3e9991;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   /* line 383, ../sass/screen.scss */
   .first-menu ul li a {
@@ -548,6 +548,14 @@ footer .from-the-blog {
 .our-team h2 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+/* line 447, ../sass/screen.scss */
+.our-team .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
 /* koniec media queries --------------------------------*/

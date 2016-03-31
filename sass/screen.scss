@@ -378,8 +378,8 @@ footer {
 			float: none;
 			display: block;
 			border-bottom: solid 1px darken($lightblue, 20);
-			padding-top: 20px;
-			padding-bottom: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
 			a {
 		font-size: 1.3rem;
 		margin-right: 0px;
@@ -444,7 +444,13 @@ footer {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
-
+.flex-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			padding: 10px;
+		}
 }
 
 /* koniec media queries --------------------------------*/
