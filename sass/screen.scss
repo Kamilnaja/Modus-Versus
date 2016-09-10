@@ -266,10 +266,13 @@ footer {
 	color: white;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: flex-start;
 	font-family: $open;
 	flex-direction: row;
 	padding: 50px 7px 0 7px;
 	line-height: 23px;
+
+	
 	article {
 		padding: 20px;
 	}
